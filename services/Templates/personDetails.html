@@ -1,0 +1,22 @@
+﻿
+<h2>Person details</h2>
+    <table border="1" ng-repeat="p in personDetailsCtrl.person">
+        <tr>
+            <td>Pid</td>
+            <td>{{p.pid}}</td>
+        </tr>
+        <tr>
+            <td>Pname</td>
+            <td>{{p.pname}}</td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>{{p.gender}}</td>
+        </tr>
+        <tr>
+            <td>DOB</td>
+            <td>{{p.DOB}}</td>
+        </tr>
+    </table>
+
+<a ui-sref="personParent.persons">Persons from personDetails</a>

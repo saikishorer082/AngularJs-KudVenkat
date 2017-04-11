@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="scripts/angular.min.js"></script>
+    <meta charset="utf-8" />
+    <script src="scripts/bootstrap.min.js"></script>
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="styleSheet1.css" rel="stylesheet" />
+</head>
+<body ng-app>
+    
+    <div class="container box">
+        <div class="form-horizontal form-group">
+                <div class="col-lg-12">
+                    <label class="col-lg-2" for="1">Enter Name</label>
+                    <div class="col-lg-3">
+                        <input type="text"  class="form-control input-sm" ng-model="name" id="1"  />
+                    </div>
+                </div>   
+            
+            <br /><br />
+            
+                <div class="col-lg-12">
+                    <label class="col-lg-2" for="2">Enter fee</label>
+                    <div class="col-lg-3">
+                        <input type="number" class="form-control input-sm" ng-model="fee" id="2" />
+                    </div>
+                </div>
+            
+            <br /><br />
+           
+                <div class="col-lg-12">
+                    <label class="col-lg-2" for="3">Enter DOB</label>
+                    <div class="col-lg-3">
+                        <input type="text" class="form-control input-sm" ng-model="DOB" id="3" />
+                    </div>
+                </div>
+           
+        </div>
+        <div class="form-horizontal">
+            <div class="col-lg-4">
+                Given Name : {{name}}<br />
+                To UpperCase : {{name|uppercase}}<br />
+                To LowerCase : {{name|lowercase}}<br />
+                Length : {{name.length}}<br />
+            </div>
+
+            <div class="col-xs-4">
+                Entered Fee is : {{fee}}<br />
+                Round up to 2 decimal : {{fee|number:2}}
+                <div>
+                    First five : {{name|limitTo:5}}<br />
+                    Last five : {{name|limitTo:-5}}
+                </div>
+            </div>
+            <div class="col-xs-4">
+                Entered Fee is : {{DOB}}<br />
+                Round up to 2 decimal : {{DOB|date:"dd:mm:yyyy"}}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

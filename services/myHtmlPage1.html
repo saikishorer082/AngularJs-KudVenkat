@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="../scripts/angular.min.js"></script>
+
+    <script src="scripts.js"></script>
+	<meta charset="utf-8" />
+</head>
+<body ng-app="sampleModule">
+    <div ng-controller="testController">
+        <h2>Employee Records</h2>
+        
+            <table border="1">
+                <tr>
+                    <th>eid</th>
+                    <th>ename</th>
+                    <th>role</th>
+                    <th>salary</th>
+                </tr>
+                <tr ng-repeat="e in employees">
+                    <td>{{e.eid}}</td>
+                    <td>{{e.ename}}</td>
+                    <td>{{e.role}}</td>
+                    <td>{{e.salary}}</td>
+                    <td><button ng-click="Delete($index)">Delete</button>
+                        <button ng-click="Select($index)">Select/Edit</button></td>
+                </tr>
+            </table>
+        <input type="text" ng-model="e.eid" placeholder="Employee eid" /><br />
+        <input type="text" ng-model="e.ename" placeholder="Employee ename" /><br />
+        <input type="text" ng-model="e.role" placeholder="Employee role" /><br />
+        <input type="text" ng-model="e.salary" placeholder="Employee salary" /><br />
+        <input type="button" value="Add Record" ng-click="addRecord(e)" />
+        <input type="button" value="Update" ng-click="Update(e)" />
+    </div>
+</body>
+</html>

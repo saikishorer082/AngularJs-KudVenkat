@@ -1,0 +1,23 @@
+﻿.mybody{
+    padding:10px 10px 10px 10px;
+}
+.h{
+height:100px; 
+background-color:gainsboro;
+}
+.b{
+    height:500px; 
+   background-color:khaki;
+  padding-top:200px;
+}
+
+
+.bb{
+    height:500px; 
+   background-color:navajowhite;
+   padding:20px;
+}
+.activeState {
+    background-color:black;
+    text-decoration-color:white;
+}

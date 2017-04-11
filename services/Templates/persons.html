@@ -1,0 +1,12 @@
+﻿<body>
+   <h2>Persons Names ({{personsCtrl.personsTotal.total}})</h2> 
+    <input type="text"  ng-model="personsCtrl.pname"/>
+    <button ng-click="personsCtrl.searchPerson()">Search</button>
+<ol>
+    <li ng-repeat="person in personsCtrl.persons">
+        <a ui-sref="personParent.personDetails({pid:person.pid})">{{person.pname}}</a>
+    </li>
+</ol>    
+
+    <button ng-click="personsCtrl.reloadData()">Reload Data</button>
+</body>

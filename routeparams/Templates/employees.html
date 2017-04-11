@@ -1,0 +1,17 @@
+﻿<body>
+    <h2>Employee List</h2>
+    <table>
+        <tr>
+            <th>Eid</th>
+            <th>Ename</th>
+            <th>job</th>
+            <th>salary</th>
+        </tr>
+        <tr ng-repeat="e in employees">
+            <td>{{e.eid}}</td>
+            <td>{{e.ename}}</td>
+            <td>{{e.job}}</td>
+            <td>{{e.salary}}</td>
+        </tr>
+    </table>
+</body>

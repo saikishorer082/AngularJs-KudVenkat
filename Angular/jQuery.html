@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="scripts/jquery-1.9.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#b1").click(function () {
+            var num1 = $("#t1").val();
+            var num2 = $("#t2").val();
+            $("#t3").val((num1*1) + (num2*1));
+        });
+    });
+</script>
+</head>
+<body>
+    <h2>jQuery</h2>
+    Enter num1: <input type="text" id="t1" /><br />
+    Enter num2: <input type="text" id="t2" /><br />
+    <button id="b1">Click me</button><br />
+  Addition: <input type="text" id="t3" />
+</body>
+</html>

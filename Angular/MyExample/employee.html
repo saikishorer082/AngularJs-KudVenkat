@@ -1,0 +1,24 @@
+﻿<body>
+    <table border="1">
+        <tr>
+            <th>eid</th>
+            <th>ename</th>
+            <th>role</th>
+            <th>salary</th>
+        </tr>
+        <tr ng-repeat="e in employees">
+            <td>{{e.eid}}</td>
+            <td>{{e.ename}}</td>
+            <td>{{e.role}}</td>
+            <td>{{e.salary}}</td>
+        </tr>
+    </table>
+    <input type="text" ng-model="e.eid" placeholder="Employee eid"/><br />
+    <input type="text" ng-model="e.ename" placeholder="Employee ename" /><br />
+    <input type="text" ng-model="e.role" placeholder="Employee role"/><br />
+    <input type="text" ng-model="e.salary" placeholder="Employee salary"/><br />
+    <button ng-click="First()">First</button>
+    <button ng-click="Next()">Next</button>
+    <button ng-click="Previous()">Previous</button>
+    <button ng-click="Last()">Last</button>
+</body>

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "services", "services\services.csproj", "{185B2EB5-8265-4359-A9CD-D7D196CB4D5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "controllerAS", "controllerAS\controllerAS.csproj", "{EC5B2737-421C-43D3-9AF1-9D03FF988665}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular SPA", "Angular SPA\Angular SPA.csproj", "{DC07F3FD-BF01-4A8D-A944-AA6F24CADD31}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{185B2EB5-8265-4359-A9CD-D7D196CB4D5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{185B2EB5-8265-4359-A9CD-D7D196CB4D5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{185B2EB5-8265-4359-A9CD-D7D196CB4D5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{185B2EB5-8265-4359-A9CD-D7D196CB4D5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC5B2737-421C-43D3-9AF1-9D03FF988665}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC5B2737-421C-43D3-9AF1-9D03FF988665}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC5B2737-421C-43D3-9AF1-9D03FF988665}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC5B2737-421C-43D3-9AF1-9D03FF988665}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC07F3FD-BF01-4A8D-A944-AA6F24CADD31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC07F3FD-BF01-4A8D-A944-AA6F24CADD31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC07F3FD-BF01-4A8D-A944-AA6F24CADD31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC07F3FD-BF01-4A8D-A944-AA6F24CADD31}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

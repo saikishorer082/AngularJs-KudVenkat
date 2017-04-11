@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="scripts/angular.min.js"></script>
+    <script src="Scripts1.js"></script>
+</head>
+<body ng-app="sample">
+    <div ng-controller="test">
+    <table border="1">
+        <tr>
+           <td>Student Id</td> 
+           <td><input type="text" ng-model="s.id" /></td>
+            <td><button ng-click="First()">First</button></td>
+
+        </tr>
+        <tr>
+            <td>Student Name</td>
+            <td><input type="text" ng-model="s.name" /></td>
+            <td><button ng-click="previous()">Previous</button></td>
+        </tr>
+        <tr>
+            <td>Student Age</td>
+            <td><input type="text" ng-model="s.age" /></td>
+            <td><button ng-click="next()">Next</button></td>
+
+        </tr>
+        <tr>
+            <td>Student Fee</td>
+            <td><input type="text" ng-model="s.fee" /></td>
+            <td><button ng-click="Last()">Last</button></td>
+
+        </tr>
+    </table>
+     </div>
+</body>
+</html>

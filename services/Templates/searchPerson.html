@@ -1,0 +1,18 @@
+﻿<body>
+    <h2>Person Details</h2>
+    <table border="1">
+        <tr>
+            <th>Pid</th>
+            <th>Pname</th>
+            <th>Gender</th>
+            <th>DOB</th>
+        </tr>
+        <tr ng-repeat="p in searchPersonctrl.persons">
+            <td>{{p.pid}}</td>
+            <td>{{p.pname}}</td>
+            <td>{{p.gender}}</td>
+            <td>{{p.DOB}}</td>
+        </tr>
+    </table>
+    <a ui-sref="personParent.persons">Persons from searchPerson</a>
+</body>

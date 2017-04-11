@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html >
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="scripts/angular.min.js"></script>
+    <script src="Script.js"></script>
+</head>
+
+
+<body ng-app="sample">
+    <!--<div ng-controller="test">
+        <input type="text" ng-model="p.pid" placeholder="Enter pid" />
+        <input type="text" ng-model="p.pname" placeholder="Enter pname" />
+        <input type="text" ng-model="p.age" placeholder="Enter age" />
+        <input type="text" ng-model="p.gender" placeholder="Enter gender" />
+        <br /><button ng-click="Add(p)">ADD</button>
+        <a href="" ng-click="update(p,$index)">update</a>
+
+        <h2>Show all records</h2>
+        <table border="1">
+            <tr>
+                <th>pid</th>
+                <th>pname</th>
+                <th>age</th>
+                <th>gender</th>
+                <th>operations</th>
+            </tr>
+            <tr ng-repeat="p in person">
+                <td>{{p.pid}}</td>
+                <td>{{p.pname}}</td>
+                <td>{{p.age}}</td>
+                <td>{{p.gender}}</td>
+                <td>
+                    <a href="" ng-click="Delete($index)">Delete</a>
+                    <a href="" ng-click="Edit(p,$index)">Edit</a>
+                </td>
+            </tr>
+        </table>
+    </div>-->
+    <div ng-controller="test">
+        <input type="text" ng-model="name" placeholder="Enter Name" />
+        <button ng-click="Add(name)">Add</button>
+        <table border="1">
+            <tr>
+                <th>Names</th>
+                <th>Operations</th>
+            </tr>
+            <tr ng-repeat="n in names| orderBy:'names'">
+                <td>{{n}}</td>
+                <td><a href="" ng-click="Delete($index)">Delete</a></td>
+                <td><a href="" ng-click="Select($index)">Select</a></td>
+                <td><a href="" ng-click="Edit(n,$index)">Edit</a></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

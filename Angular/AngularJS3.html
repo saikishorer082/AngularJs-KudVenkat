@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="scripts/angular.min.js"></script>
+    <script src="Myscripts3.js"></script>
+</head>
+<body ng-app="sample">
+    <div ng-controller="test">
+        <input type="text" ng-model="s.id" placeholder="Enter Id"/><br />
+        <input type="text" ng-model="s.name" placeholder="Enter Name"/><br />
+        <input type="text" ng-model="s.age" placeholder="Enter Age"/><br />
+        <input type="text" ng-model="s.fee" placeholder="Enter Fee"/><br />
+        <button ng-click="Add(s)">Add</button>
+        <button ng-click="Update(s,$index)">Update</button>
+        <table border="1">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Fee</th>
+            </tr>
+            <tr ng-repeat="s in students|orderBy:'age'">
+                <td>{{s.id}}</td>
+                <td>{{s.name}}</td>
+                <td>{{s.age}}</td>
+                <td>{{s.fee}}</td>
+                <td><a href="" ng-click="Delete($index)">Delete</a></td>
+                <td><a href="" ng-click="Edit(s,$index)">Edit</a></td>
+                <td><a href="" ng-click="Select($index)">Select</a></td>
+            </tr>
+        </table>
+      Selected Student details are<br />
+         <label>{{"ID:" +ss.id}}<br />
+            {{"Name:" +ss.name}}<br />
+           {{"Age:" +ss.age}}<br />
+           {{"Fee:" +ss.fee}}
+        </label>
+    </div>
+</body>
+</html>

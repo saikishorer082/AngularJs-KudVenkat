@@ -1,0 +1,23 @@
+﻿[
+  {
+    "eid": 1001,
+    "ename": "sai",
+    "job": "trainer",
+    "salary": 5000
+  },
+  {
+    "eid": 1002,
+    "ename": "kishore",
+    "job": "programmer",
+    "salary": 5500
+  },  {
+    "eid": 1003,
+    "ename": "reddy",
+    "job": "developer",
+    "salary": 6000  },  {
+    "eid": 1004,
+    "ename": "amith",
+    "job": "testing",
+    "salary": 5000
+  }
+]
